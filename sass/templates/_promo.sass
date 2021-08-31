@@ -1,0 +1,125 @@
+.main__promo
+  padding: 30px
+  width: 100%
+  margin-left: 300px
+
+.main__wrapper
+  background: url(../img/background/2.png) 
+  background-repeat: no-repeat
+  background-size: cover
+  height: 375px
+  width: 100%
+
+.promo__title-wrapper
+  padding: 30px 0 0 80px
+  font-size: 30px 
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  box-sizing: border-box
+
+
+.promo__title--button
+  margin-top: 50px
+  height: 45px
+  padding: 0 12px
+  background-color: #20202a
+  border: 0
+  font-size: 12px
+  cursor: pointer
+  letter-spacing: 1.2px
+  font-weight: 600
+  transition: transform .3s
+  font-family: "Rubik",sans-serif
+  color: #00FFDD
+  border-radius: 2px
+  filter: drop-shadow(0 1px 1px #20202a)
+  &:hover
+     transform: translateY(-2px)
+
+.works-list
+  display: flex
+  flex-wrap: wrap
+
+.works-list__item
+  width: 518px
+  height: 283px
+  position: relative
+  padding-top: 2rem
+  &:not(:last-child)
+    margin: 0 2rem 0 0
+  &:hover
+    .works-list__info
+      opacity: 1
+      transition: 1s
+    
+    
+.works-list__link
+  color: #fff
+  text-decoration: none
+
+.works-list__info
+  font-size: 18px
+  cursor: pointer
+  position: absolute
+  bottom: 0
+  opacity: 0
+  width: 100% 
+  height: 50%
+  background-color: rgba(0,0,0,.5)
+
+.work-list__text
+  text-align: center
+  padding: 30px
+
+.works-list__media
+  width: 100%
+  height: 100%
+  transition: transform .5s
+
+.main__burger
+  display: flex
+  justify-content: flex-end
+  background-color: transparent
+  border: 0
+  padding: 0 20px 20px 0
+  i
+    color: rgba(255,255,255,.5)
+    font-weight: 700
+    font-size: 16px
+
+.main__burger
+  display: none
+
+
+@media screen and ( max-width: 800px )
+  .main__burger
+    display: flex
+
+  .works-list__info
+    opacity: 1
+    align-items: center
+    display: flex
+    justify-content: center
+
+  .main__promo
+    margin-left: 0
+    padding: 30px 0
+
+  .works-list__item:not(:last-child)
+    margin: 0
+
+  .works-list__item
+    width: 100% 
+    height: auto
+
+  .promo__title-wrapper
+    font-size: 18px
+
+  .promo__title-wrapper
+    padding: 50px 0 0 50px
+
+
+@media screen and ( max-width: 350px )
+  .promo__title-wrapper
+    padding: 10px 0 0 10px
